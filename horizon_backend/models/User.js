@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema(
     middle_name: { type: String },
     last_name: { type: String },
     email: { type: String },
+    phone_number: { type: String },
     password: { type: String },
     account_type: { type: String, enum: ["freelancer", "client"] },
     profile_picture: { type: String },
