@@ -1,4 +1,4 @@
-import mongoose from "monogoose";
+import mongoose from "mongoose";
 
 const commentSchema = new mongoose.Schema(
   {
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema(
     profile_picture_id: { type: String },
     posts: { type: [postSchema] },
   },
-  { collection: "users", timestamps: "true" }
+  { collection: "users", timestamps: true }
 );
 
 const UserModel = mongoose.model("users", userSchema);
